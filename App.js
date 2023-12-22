@@ -6,6 +6,9 @@ export default function App() {
   return (
     //<ImageBackground source={require("./assets/splash.png")} style={styles.container}>
     <View>
+      <Svg height="100%" width="100%">
+        <SvgImage></SvgImage>
+    </Svg>
       <Text>Merry Christmas!</Text>
       <StatusBar style="auto" />
     </View>
