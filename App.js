@@ -7,7 +7,7 @@ export default function App() {
     // <ImageBackground source={require("./assets/background.png")} height={"100%"} width={"100%"}>
     <View style={styles.container}>
       <Text>Merry Christmas!</Text>
-      <Button title='Hallo' onPress={playsound}></Button>
+      <Button title='Hallo' onPress={playsound} style={styles.hellobutton}></Button>
       <StatusBar style="auto" />
     </View>
     // </ImageBackground>
@@ -23,6 +23,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 100
+    margin: "100px"
+  },
+  hellobutton: {
+    flex: 1,
+    backgroundColor: 'black',
+    margin: "100px"
   },
 });
