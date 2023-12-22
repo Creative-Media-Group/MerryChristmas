@@ -4,12 +4,13 @@ import Svg, { Image as SvgImage } from 'react-native-svg'
 
 export default function App() {
   return (
-    <ImageBackground source={require("./assets/splash.png")} style={styles.container}>
-    <View style={styles.container}>
-      <Text>Merry Christmas!</Text>
-      <StatusBar style="auto" />
-    </View>
-    </ImageBackground>
+    <Svg height="100%" width="100%">
+      <SvgImage href={require("./assets/menuescreen.svg")} height="100%" width="100%"></SvgImage>
+      <View style={styles.container}>
+        <Text>Merry Christmas!</Text>
+        <StatusBar style="auto" />
+      </View>
+    </Svg>
   );
 }
 
