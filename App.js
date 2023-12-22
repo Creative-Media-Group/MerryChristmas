@@ -4,13 +4,12 @@ import Svg, { Image as SvgImage } from 'react-native-svg'
 
 export default function App() {
   return (
-    //<ImageBackground source={require("./assets/splash.png")} style={styles.container}>
-    <View>
-      
+    <ImageBackground source={require("./assets/splash.png")} style={styles.container}>
+    <View style={styles.container}>
       <Text>Merry Christmas!</Text>
       <StatusBar style="auto" />
     </View>
-    //</ImageBackground>
+    </ImageBackground>
   );
 }
 
@@ -20,6 +19,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    resizeMode: 'cover'
   },
 });
