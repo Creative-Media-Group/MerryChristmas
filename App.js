@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import Svg, { Image as SvgImage } from 'react-native-svg'
 
 export default function App() {
   return (
