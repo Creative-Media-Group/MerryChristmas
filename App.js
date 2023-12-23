@@ -20,14 +20,14 @@ function playsound() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'yellow',
     alignItems: 'center',
     justifyContent: 'center',
-    margin: "100px"
+    marginBottom: "100px"
   },
   hellobutton: {
     flex: 1,
-    backgroundColor: 'black',
-    margin: "100px"
+    backgroundColor: 'green',
+    //margin: "100px"
   },
 });
