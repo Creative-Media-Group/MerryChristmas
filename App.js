@@ -11,7 +11,6 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
     // </ImageBackground>
-
   );
 }
 function playsound() {
@@ -22,12 +21,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'yellow',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: "100px"
+    justifyContent: 'center'
   },
   hellobutton: {
-    flex: 1,
-    backgroundColor: 'green',
+    flex: 1
     //margin: "100px"
   },
 });
