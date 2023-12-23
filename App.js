@@ -8,6 +8,9 @@ export default function App() {
     <View style={styles.container}>
       <Text>Merry Christmas!</Text>
       <Button title='Hallo' onPress={playsound} style={styles.hellobutton}></Button>
+      <Button title='Red' onPress={redbutton} style={styles.hellobutton}></Button>
+      <Button title='Green' onPress={greenbutton} style={styles.hellobutton}></Button>
+      <Button title='Blue' onPress={bluebutton} style={styles.hellobutton}></Button>
       <StatusBar style="auto" />
     </View>
     // </ImageBackground>
@@ -15,6 +18,15 @@ export default function App() {
 }
 function playsound() {
   alert("playing")
+};
+function redbutton() {
+  styles.container.backgroundColor = "red"
+};
+function greenbutton() {
+  styles.container.backgroundColor = "green"
+};
+function bluebutton() {
+  styles.container.backgroundColor = "blue"
 };
 const styles = StyleSheet.create({
   container: {
