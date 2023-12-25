@@ -28,7 +28,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "sdkVersion": "49.0.0"
+    "sdkVersion": "49.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "daa4c179-563f-4753-b0e8-5fa06fc81910"
+      }
+    }
   },
   "name": "merrychristmas"
 }
