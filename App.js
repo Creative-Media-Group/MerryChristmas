@@ -33,15 +33,15 @@ function playsound() {
 };
 function redbutton() {
   styles.container.backgroundColor = "red",
-  alert(text)
+    alert(text)
 };
 function greenbutton() {
   styles.container.backgroundColor = "green",
-  alert(text)
+    alert(text)
 };
 function bluebutton() {
   styles.container.backgroundColor = "blue",
-  alert(text)
+    alert(text)
 };
 const styles = StyleSheet.create({
   container: {
