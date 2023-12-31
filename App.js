@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground, Button } from 'react-native';
-import Svg, { Image as SvgImage } from 'react-native-svg';
-import { Appbar } from 'react-native-paper';
+import Svg, { Image as SvgImage } from 'react-native-svg'
 
 const text = "todo";
 
