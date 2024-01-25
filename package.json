@@ -19,10 +19,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.5",
-    "react-native-macos": "^0.72.12",
+    "react-native-macos": "^0.73",
     "react-native-svg": "13.9.0",
     "react-native-web": "~0.19.6",
-    "react-native-windows": "0.72.22"
+    "react-native-windows": "0.72.25"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
