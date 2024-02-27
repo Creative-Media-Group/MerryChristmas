@@ -10,22 +10,10 @@
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
-    "expo": "^50.0.3",
+    "expo": "^50.0.7",
     "expo-av": "~13.4.1",
     "expo-splash-screen": "~0.20.5",
-<<<<<<< HEAD
-    "expo-status-bar": "~1.6.0",
-    "expo-system-ui": "~2.4.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.72.10",
-    "react-native-macos": "^0.73",
-    "react-native-svg": "13.9.0",
-    "react-native-web": "~0.19.6",
-    "react-native-windows": "0.72.25"
-=======
     "expo-system-ui": "~2.4.0"
->>>>>>> parent of 058f5fd (added windows)
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
