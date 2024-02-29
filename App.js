@@ -29,19 +29,23 @@ export default function App() {
   );
 }
 function playsound() {
-  alert("playing")
+  alert("playing"),
+  console.log("playing")
 };
 function redbutton() {
   styles.container.backgroundColor = "red",
-    alert(text)
+    alert(text),
+    console.log(text)
 };
 function greenbutton() {
   styles.container.backgroundColor = "green",
-    alert(text)
+    alert(text),
+    console.log(text)
 };
 function bluebutton() {
   styles.container.backgroundColor = "blue",
-    alert(text)
+    alert(text),
+    console.log(text)
 };
 const styles = StyleSheet.create({
   container: {
