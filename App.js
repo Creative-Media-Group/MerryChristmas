@@ -30,7 +30,7 @@ export default function App() {
 }
 function playsound() {
   alert("playing"),
-  console.log("playing")
+    console.log("playing")
 };
 function redbutton() {
   styles.container.backgroundColor = "red",
