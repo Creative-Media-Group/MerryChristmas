@@ -17,13 +17,13 @@ export default function App() {
         <Button title='Play gingle' onPress={playsound}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title={red} onPress={button => red} style={styles.hellobutton}></Button>
+        <Button title={red} onPress={button | red} style={styles.hellobutton}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title={green} onPress={button => green} style={styles.hellobutton}></Button>
+        <Button title={green} onPress={button | green} style={styles.hellobutton}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title={blue} onPress={button => blue} style={styles.hellobutton}></Button>
+        <Button title={blue} onPress={button | blue} style={styles.hellobutton}></Button>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -34,7 +34,7 @@ function playsound() {
   alert("playing"),
     console.log("playing")
 };
-function button(text = "Hallo Welt") {
+function button(text) {
   styles.container.backgroundColor = "red",
     alert(text),
     console.log(text)
