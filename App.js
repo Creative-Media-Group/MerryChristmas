@@ -2,7 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground, Button } from 'react-native';
 import Svg, { Image as SvgImage } from 'react-native-svg'
 
-const text = "todo";
+const red = "Red";
+const green = "Green";
+const blue = "Blue";
 
 export default function App() {
   return (
@@ -15,13 +17,13 @@ export default function App() {
         <Button title='Play gingle' onPress={playsound}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title='Red' onPress={redbutton} style={styles.hellobutton}></Button>
+        <Button title={red} onPress={button=>red} style={styles.hellobutton}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title='Green' onPress={greenbutton} style={styles.hellobutton}></Button>
+        <Button title={green} onPress={button=>green} style={styles.hellobutton}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title='Blue' onPress={bluebutton} style={styles.hellobutton}></Button>
+        <Button title={blue} onPress={button=>blue} style={styles.hellobutton}></Button>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -32,18 +34,8 @@ function playsound() {
   alert("playing"),
     console.log("playing")
 };
-function redbutton() {
+function button(text="Hallo Welt") {
   styles.container.backgroundColor = "red",
-    alert(text),
-    console.log(text)
-};
-function greenbutton() {
-  styles.container.backgroundColor = "green",
-    alert(text),
-    console.log(text)
-};
-function bluebutton() {
-  styles.container.backgroundColor = "blue",
     alert(text),
     console.log(text)
 };
