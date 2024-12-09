@@ -17,13 +17,13 @@ export default function App() {
         <Button title='Play gingle' onPress={playsound}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title={red} onPress={button | red} style={styles.hellobutton}></Button>
+        <Button title={red} onPress={playsound} style={styles.hellobutton}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title={green} onPress={button | green} style={styles.hellobutton}></Button>
+        <Button title={green} onPress={playsound} style={styles.hellobutton}></Button>
       </View>
       <View style={styles.btn}>
-        <Button title={blue} onPress={button | blue} style={styles.hellobutton}></Button>
+        <Button title={blue} onPress={playsound} style={styles.hellobutton}></Button>
       </View>
       <StatusBar style="auto" />
     </View>
