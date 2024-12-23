@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic } from "react-native";
+import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic, PushNotification } from "react-native";
 //import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
@@ -14,8 +14,9 @@ export default function Index() {
 
   }
   const showToast = () => {
-    ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
+    Alert.alert('Merry Christmas', 'Merry Christmas', [{ text: "Cancel", onPress: () => console.log("1") }, { text: "OK", onPress: () => console.log("1") }])
   }
+
   return (
     <View
       style={styles.container}
