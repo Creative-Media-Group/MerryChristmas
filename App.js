@@ -8,26 +8,25 @@ const blue = "Blue";
 
 export default function App() {
   return (
-    // <ImageBackground source={require("./assets/background.png")} height={"100%"} width={"100%"}>
-    <View style={styles.container}>
-      <View style={styles.btn}>
-        <Text>Merry Christmas!</Text>
-      </View>
-      <View style={styles.btn}>
-        <Button title='Play gingle' onPress={playsound}></Button>
-      </View>
-      <View style={styles.btn}>
-        <Button title={red} onPress={playsound} style={styles.hellobutton}></Button>
-      </View>
-      <View style={styles.btn}>
-        <Button title={green} onPress={playsound} style={styles.hellobutton}></Button>
-      </View>
-      <View style={styles.btn}>
-        <Button title={blue} onPress={playsound} style={styles.hellobutton}></Button>
-      </View>
-      <StatusBar style="auto" />
-    </View>
-    // </ImageBackground>
+    <ImageBackground source={require("./assets/background.png")} resizeMode='cover'>
+      
+        <View style={styles.btn}>
+          <Text>Merry Christmas!</Text>
+        </View>
+        <View style={styles.btn}>
+          <Button title='Play gingle' onPress={playsound}></Button>
+        </View>
+        <View style={styles.btn}>
+          <Button title={red} onPress={playsound} style={styles.hellobutton}></Button>
+        </View>
+        <View style={styles.btn}>
+          <Button title={green} onPress={playsound} style={styles.hellobutton}></Button>
+        </View>
+        <View style={styles.btn}>
+          <Button title={blue} onPress={playsound} style={styles.hellobutton}></Button>
+        </View>
+        <StatusBar style="auto" />
+    </ImageBackground>
   );
 }
 function playsound() {
