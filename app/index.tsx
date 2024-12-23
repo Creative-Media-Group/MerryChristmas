@@ -1,21 +1,26 @@
 import { useEffect, useState } from "react";
 import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic } from "react-native";
-// import { useAudioPlayer } from "expo-audio";
+import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
   var locale = Intl.DateTimeFormat().resolvedOptions().locale;
   var lang = locale.split("-")[0];
   var region = locale.split("-")[1];
-  //const player = useAudioPlayer("./assets/we-wish-you-a-merry-christmas.mp3")
+  const containerStyles = ""
+  const player = useAudioPlayer("./assets/we-wish-you-a-merry-christmas.mp3")
 
-  function playaudio() {
-    //player.play()
+  const playaudio = () => {
+    player.play()
+
+  }
+  const showToast = () => {
+    ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
   }
   return (
     <View
       style={styles.container}
     >
-      <Button title="Hello" onPress={playaudio}></Button>
+      <Button title="Hello" onPress={() => showToast()} ></Button>
       <Text>Edit app/index.tsx to edit this screen.</Text>
     </View>
   );
