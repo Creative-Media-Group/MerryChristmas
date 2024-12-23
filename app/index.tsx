@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic } from "react-native";
-import { useAudioPlayer } from "expo-audio";
+//import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
   var locale = Intl.DateTimeFormat().resolvedOptions().locale;
   var lang = locale.split("-")[0];
   var region = locale.split("-")[1];
   const containerStyles = ""
-  const player = useAudioPlayer("./assets/we-wish-you-a-merry-christmas.mp3")
+  //const player = useAudioPlayer("./assets/we-wish-you-a-merry-christmas.mp3")
 
   const playaudio = () => {
-    player.play()
+    //player.play()
 
   }
   const showToast = () => {
