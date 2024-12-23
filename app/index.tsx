@@ -13,8 +13,11 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Button title="Hello"></Button>
+      <Button title="Hello" onPress={playaudio}></Button>
       <Text>Edit app/index.tsx to edit this screen.</Text>
     </View>
   );
+  function playaudio(): any {
+    
+  }
 }
