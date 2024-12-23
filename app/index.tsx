@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic } from "react-native";
-import { useAudioPlayer } from "expo-audio";
+import { rgbaColor } from "react-native-reanimated/lib/typescript/Colors";
+// import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
   var locale = Intl.DateTimeFormat().resolvedOptions().locale;
   var lang = locale.split("-")[0];
   var region = locale.split("-")[1];
-  const player = useAudioPlayer("./assets/we-wish-you-a-merry-christmas.mp3")
+  //const player = useAudioPlayer("./assets/we-wish-you-a-merry-christmas.mp3")
 
   function playaudio() {
-    player.play()
+    //player.play()
   }
   return (
     <View
@@ -25,5 +26,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
+  }, button: { color: rgbaColor(0,0,0).toString() }
 });
