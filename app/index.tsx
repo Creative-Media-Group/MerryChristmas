@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic } from "react-native";
-import { rgbaColor } from "react-native-reanimated/lib/typescript/Colors";
 // import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
@@ -26,5 +25,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  }, button: { color: rgbaColor(0,0,0).toString() }
+  }, button: { color: "#fffff" }
 });
