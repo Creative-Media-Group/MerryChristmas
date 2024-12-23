@@ -1,26 +1,14 @@
 import { useEffect, useState } from "react";
-import { Button, Text, View, StyleSheet } from "react-native";
+import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic } from "react-native";
 import { Audio } from "expo-av";
 
 export default function Index() {
-  const [sound, setSound] = useState();
   var locale = Intl.DateTimeFormat().resolvedOptions().locale;
   var lang = locale.split("-")[0];
   var region = locale.split("-")[1];
 
-  async function playaudio() {
-    const { sound } = await Audio.Sound.createAsync(require('./assets/we-wish-you-a-merry-christmas.mp3'));
-    setSound(sound);
-    await sound.playAsync();
+  function playaudio() {
   }
-  useEffect(() => {
-    return sound
-      ? () => {
-        console.log('Unloading Sound');
-        sound.unloadAsync();
-      }
-      : undefined;
-  }, [sound]);
   return (
     <View
       style={styles.container}
