@@ -14,7 +14,7 @@ export default function Index() {
 
   }
   const showToast = () => {
-    Alert.alert('Merry Christmas', 'Merry Christmas', [{ text: "Cancel", onPress: () => console.log("1") }, { text: "OK", onPress: () => console.log("1") }])
+    Alert.alert('Merry Christmas', 'Merry Christmas', [{ text: "Cancel", onPress: () => console.log("Cancel") }, { text: "OK", onPress: () => console.log("OK") }])
   }
 
   return (
