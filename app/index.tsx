@@ -41,7 +41,7 @@ export default function Index() {
         onPress={
           () => showToast()
         }
-        color={"#fffff"}
+        color={"#ff0000"}
       >
       </Button>
     </View>
