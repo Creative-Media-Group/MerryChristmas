@@ -30,8 +30,8 @@ export default function Index() {
     <View
       style={styles.container}
     >
-      <Button title="Hello" onPress={() => showToast()} ></Button>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Merry Christmas</Text>
+      <Button title="Merry Christmas" onPress={() => showToast()} color={"#fffff"} ></Button>
     </View>
   );
 }
@@ -40,5 +40,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  }, button: { color: "#fffff" }
+    gap: "50%"
+  },
+  button: { color: "#fffff" }
 });
