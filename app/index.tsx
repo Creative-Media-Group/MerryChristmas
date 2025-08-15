@@ -18,11 +18,16 @@ export default function Index() {
     Alert.alert(
       'Merry Christmas',
       'Merry Christmas',
-      [{
-        text: "Cancel",
-        onPress: () => console.log("Cancel")
-      },
-      { text: "OK", onPress: () => playaudio() }]
+      [
+        {
+          text: "Cancel",
+          onPress: () => console.log("Cancel")
+        },
+        {
+          text: "OK",
+          onPress: () => playaudio()
+        }
+      ]
     )
   }
 
@@ -31,7 +36,14 @@ export default function Index() {
       style={styles.container}
     >
       <Text>Merry Christmas</Text>
-      <Button title="Merry Christmas" onPress={() => showToast()} color={"#fffff"} ></Button>
+      <Button
+        title="Merry Christmas"
+        onPress={
+          () => showToast()
+        }
+        color={"#fffff"}
+      >
+      </Button>
     </View>
   );
 }
