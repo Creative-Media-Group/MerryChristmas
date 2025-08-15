@@ -21,7 +21,7 @@ export default function Index() {
         text: "Cancel",
         onPress: () => console.log("Cancel")
       },
-      { text: "OK", onPress: () => console.log("OK") }]
+      { text: "OK", onPress: () => playaudio() }]
     )
   }
 
