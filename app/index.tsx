@@ -35,15 +35,17 @@ export default function Index() {
     <View
       style={styles.container}
     >
-      <Text>Merry Christmas</Text>
-      <Button
-        title="Merry Christmas"
-        onPress={
-          () => showToast()
-        }
-        color={"#ff0000"}
-      >
-      </Button>
+      <View style={styles.secondcontainer}>
+        <Text style={styles.text}>Merry Christmas</Text>
+        <Button
+          title="Merry Christmas"
+          onPress={
+            () => playaudio()
+          }
+          color={"#ff0000"}
+        >
+        </Button>
+      </View>
     </View>
   );
 }
@@ -52,7 +54,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    gap: "50%"
+    gap: "50%",
+    backgroundColor: "#000000ff"
   },
-  button: { color: "#fffff" }
+  button: { color: "#fffff" },
+  text: { color: "#ffffffff" },
+  secondcontainer: {
+    //flex: 1,
+    borderRadius: 10,
+    height: "80%",
+    width: "80%",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "50%",
+    backgroundColor: "#ff000041"
+  }
 });
