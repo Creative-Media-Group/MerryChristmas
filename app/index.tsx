@@ -3,9 +3,9 @@ import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic
 import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
-  var locale = Intl.DateTimeFormat().resolvedOptions().locale;
-  var lang = locale.split("-")[0];
-  var region = locale.split("-")[1];
+  let locale = Intl.DateTimeFormat().resolvedOptions().locale;
+  let lang = locale.split("-")[0];
+  let region = locale.split("-")[1];
   const audiosrc = require("../assets/sound/we-wish-you-a-merry-christmas.mp3")
   const player = useAudioPlayer(audiosrc)
   const platform = Platform.OS
