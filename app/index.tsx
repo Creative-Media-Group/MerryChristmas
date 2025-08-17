@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic, PushNotification } from "react-native";
+import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic, PushNotification, Platform, ActionSheetIOS } from "react-native";
 import { useAudioPlayer } from "expo-audio";
 import audiosrc from "../assets/we-wish-you-a-merry-christmas.mp3";
 
@@ -9,10 +9,14 @@ export default function Index() {
   var region = locale.split("-")[1];
   const containerStyles = ""
   const player = useAudioPlayer(audiosrc)
+  const platform = Platform.OS
 
   const playaudio = () => {
+    if (platform === "android") {
+      ToastAndroid.show("Message", 5)
+    } else {
+    }
     player.play()
-
   }
   const showToast = () => {
     Alert.alert(
