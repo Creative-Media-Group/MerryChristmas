@@ -6,7 +6,6 @@ export default function Index() {
   var locale = Intl.DateTimeFormat().resolvedOptions().locale;
   var lang = locale.split("-")[0];
   var region = locale.split("-")[1];
-  const containerStyles = ""
   const audiosrc = require("../assets/sound/we-wish-you-a-merry-christmas.mp3")
   const player = useAudioPlayer(audiosrc)
   const platform = Platform.OS
