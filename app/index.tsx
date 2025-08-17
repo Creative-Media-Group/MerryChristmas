@@ -12,10 +12,6 @@ export default function Index() {
   const platform = Platform.OS
 
   const playaudio = () => {
-    if (platform === "android") {
-      ToastAndroid.show("Message", 5)
-    } else {
-    }
     player.play()
   }
   const showToast = () => {
