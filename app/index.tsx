@@ -12,6 +12,7 @@ export default function Index() {
 
   const playaudio = () => {
     player.play()
+    // player.release()
   }
   const showToast = () => {
     Alert.alert(
