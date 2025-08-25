@@ -16,7 +16,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "de.cmg.com.MerryChristmas"
+      "package": "de.cmg.merrychristmas"
     },
     "web": {
       "bundler": "metro",
