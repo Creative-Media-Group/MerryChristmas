@@ -6,6 +6,7 @@ export default function Index() {
   const player = useAudioPlayer(audiosrc)
 
   const playaudio = () => {
+    player.seekTo(0);
     player.play()
     // player.release()
   }
