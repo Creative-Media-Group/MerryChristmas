@@ -1,34 +1,13 @@
-import { useEffect, useState } from "react";
-import { Button, Text, View, StyleSheet, Alert, ToastAndroid, ToastAndroidStatic, PushNotification, Platform, ActionSheetIOS } from "react-native";
+import { Button, Text, View, StyleSheet } from "react-native";
 import { useAudioPlayer } from "expo-audio";
 
 export default function Index() {
-  let locale = Intl.DateTimeFormat().resolvedOptions().locale;
-  let lang = locale.split("-")[0];
-  let region = locale.split("-")[1];
   const audiosrc = require("../assets/sound/we-wish-you-a-merry-christmas.mp3")
   const player = useAudioPlayer(audiosrc)
-  const platform = Platform.OS
 
   const playaudio = () => {
     player.play()
     // player.release()
-  }
-  const showToast = () => {
-    Alert.alert(
-      'Merry Christmas',
-      'Merry Christmas',
-      [
-        {
-          text: "Cancel",
-          onPress: () => console.log("Cancel")
-        },
-        {
-          text: "OK",
-          onPress: () => playaudio()
-        }
-      ]
-    )
   }
 
   return (
