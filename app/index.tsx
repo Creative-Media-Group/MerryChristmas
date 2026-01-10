@@ -1,9 +1,11 @@
 import { Button, Text, View, StyleSheet } from "react-native";
 import { useAudioPlayer } from "expo-audio";
+import mystyle from "@/design/style";
 
 export default function Index() {
   const audiosrc = require("../assets/sound/we-wish-you-a-merry-christmas.mp3")
   const player = useAudioPlayer(audiosrc)
+  const style = mystyle()
 
   const playaudio = () => {
     player.seekTo(0);
@@ -13,10 +15,10 @@ export default function Index() {
 
   return (
     <View
-      style={styles.container}
+      style={style.container}
     >
-      <View style={styles.secondcontainer}>
-        <Text style={styles.text}>Merry Christmas</Text>
+      <View style={style.secondcontainer}>
+        <Text style={style.text}>Merry Christmas</Text>
         <Button
           title="Merry Christmas"
           onPress={
@@ -29,24 +31,3 @@ export default function Index() {
     </View>
   );
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    gap: "50%",
-    backgroundColor: "#000000ff"
-  },
-  button: { color: "#fffff" },
-  text: { color: "#ffffffff" },
-  secondcontainer: {
-    //flex: 1,
-    borderRadius: 10,
-    height: "80%",
-    width: "80%",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: "50%",
-    backgroundColor: "#ff000041"
-  }
-});
