@@ -3,7 +3,7 @@
     "name": "MerryChristmas",
     "slug": "MerryChristmas",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -16,35 +16,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
       },
-      "package": "de.cmg.merrychristmas",
-      "permissions": [
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
-      ]
+      "predictiveBackGestureEnabled": false,
+      "package": "de.cmg.merrychristmas"
     },
     "web": {
-      "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      [
-        "expo-audio",
-        {
-          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
-        }
-      ],
-      [
-        "expo-screen-orientation",
-        {
-          "initialOrientation": "DEFAULT"
-        }
-      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -52,30 +34,23 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
         }
       ],
-      "expo-font",
-      "expo-web-browser",
-      "expo-asset",
       "expo-image"
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "reactCompiler": true
     },
     "extra": {
-      "router": {
-        "origin": false
-      },
+      "router": {},
       "eas": {
-        "projectId": "fab50caf-35cd-4222-a79a-74dbc865a648"
+        "projectId": "a5a5f75d-e509-43c8-9414-0dd9186b9cfe"
       }
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/daa4c179-563f-4753-b0e8-5fa06fc81910"
     }
   }
 }
