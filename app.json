@@ -8,14 +8,24 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "de.cmg.merrychristmas",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "de.cmg.merrychristmas"
+      "package": "de.cmg.merrychristmas",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -58,7 +68,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "daa4c179-563f-4753-b0e8-5fa06fc81910"
+        "projectId": "fab50caf-35cd-4222-a79a-74dbc865a648"
       }
     },
     "runtimeVersion": {

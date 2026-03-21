@@ -6,7 +6,7 @@ export default function mystyle() {
             justifyContent: "center",
             alignItems: "center",
             gap: "50%",
-            backgroundColor: "#000000ff"
+            backgroundColor: "rgb(0, 0, 0)"
         },
         button: { color: "#fffff" },
         text: { color: "#ffffffff" },
