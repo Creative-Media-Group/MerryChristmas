@@ -1,4 +1,4 @@
-import { Button, Text, View, StyleSheet } from "react-native";
+import { Button, Text, View } from "react-native";
 import { useAudioPlayer } from "expo-audio";
 import mystyle from "@/design/style";
 
