@@ -40,7 +40,9 @@
           }
         }
       ],
-      "expo-image"
+      "expo-image",
+      "expo-audio",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,

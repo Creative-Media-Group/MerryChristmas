@@ -1,6 +1,6 @@
 import { Button, Text, View } from "react-native";
 import { useAudioPlayer } from "expo-audio";
-import mystyle from "@/design/style";
+import mystyle from "../design/style";
 
 export default function Index() {
   const audiosrc = require("../assets/sound/we-wish-you-a-merry-christmas.mp3")
