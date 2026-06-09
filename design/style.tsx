@@ -1,5 +1,7 @@
+import { useTheme } from "expo-router";
 import { StyleSheet } from "react-native";
-export default function mystyle() {
+export default function useStyle() {
+    const theme = useTheme();
     return StyleSheet.create({
         container: {
             flex: 1,

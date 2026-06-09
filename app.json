@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "merrychristmas",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
@@ -42,7 +42,10 @@
       ],
       "expo-image",
       "expo-audio",
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-asset",
+      "expo-font",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
