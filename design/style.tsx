@@ -8,10 +8,9 @@ export default function useStyle() {
             justifyContent: "center",
             alignItems: "center",
             gap: "50%",
-            backgroundColor: "rgb(0, 0, 0)"
         },
-        button: { color: "#fffff" },
-        text: { color: "#ffffffff" },
+        button: { color: "#ffffffff" },
+        text: { color: theme.colors.text },
         secondcontainer: {
             //flex: 1,
             borderRadius: 10,
