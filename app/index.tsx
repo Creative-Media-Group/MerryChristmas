@@ -10,38 +10,35 @@ export default function Index() {
   const playaudio = () => {
     player.seekTo(0);
     player.play()
-    // player.release()
+    player.release()
   }
 
   return (
     <Host
       style={{
         flex: 1,
-
-      }}
-
-    >
-      <Host style={{
+        backgroundColor: "#ff000041",
         //flex: 1,
         borderRadius: 10,
         height: "80%",
         width: "80%",
+        alignSelf: "center",
         justifyContent: "center",
         alignItems: "center",
         gap: "50%",
-        backgroundColor: "#ff000041"
       }}
+
+    >
+
+      <Text textStyle={{ color: theme.colors.text.toString() }}>Merry Christmas</Text>
+      <Button
+        label="Merry Christmas"
+        onPress={
+          () => playaudio()
+        }
+        style={{ backgroundColor: "#ff0000" }}
       >
-        <Text textStyle={{ color: theme.colors.text.toString() }}>Merry Christmas</Text>
-        <Button
-          label="Merry Christmas"
-          onPress={
-            () => playaudio()
-          }
-          style={{ backgroundColor: "#ff0000" }}
-        >
-        </Button>
-      </Host>
+      </Button>
     </Host>
   );
 }
