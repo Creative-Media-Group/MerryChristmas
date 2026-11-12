@@ -8,9 +8,8 @@ export default function Index() {
   const theme = useTheme();
 
   const playaudio = () => {
+    player.play();
     player.seekTo(0);
-    player.play()
-    player.release()
   }
 
   return (
